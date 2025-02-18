@@ -15,24 +15,28 @@
         let uva = 0;
         let i= 0
         while(i<frutas.length){
-            if(frutas[i]==='manzana'){
+            if(frutas[i]==="manzana"){
                 manzana++
-            } else if(frutas[i]==='pera'){
+            } else if(frutas[i]==="pera"){
                 pera++
-            } else if(frutas[i]==='sandia'){
+            } else if(frutas[i]==="sandia"){
                 sandia++
-            }else uva++
+            }else {
+                uva++
+            }
+            i++
         }
-        consoleconsole.log("Manzanas:", manzana);
+        console.log("Con while:")
+
+        console.log("Manzanas:", manzana);
         console.log("Peras:", pera);
         console.log("Sandías:", sandia);
         console.log("Uvas:", uva);
-        /*
-        let frutas = ["manzana", "pera", "sandia", "uva", "manzana"];
-        let manzana = 0;
-        let pera = 0;
-        let sandia = 0;
-        let uva = 0;
+        
+        manzana = 0
+        pera = 0
+        sandia = 0
+        uva = 0
         for (let i = 0; i < frutas.length; i++) {
             if (frutas[i] === "manzana") {
                 manzana++;
@@ -44,10 +48,12 @@
                 uva++
             }
         }
-        console.log("Manzana: "manzana);
-        console.log("Pera: "pera);
-        console.log("Sandía: "sandia);
-        console.log("Uva: "uva);*/
+        console.log("Con for:")
+
+        console.log("Manzana: ", manzana);
+        console.log("Pera: ", pera);
+        console.log("Sandía: ", sandia);
+        console.log("Uva: ", uva);
     </script>
 
 </body>
